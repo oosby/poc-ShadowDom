@@ -1,0 +1,13 @@
+<polymer-element name="oo-element" noscript>
+	<template>
+		<span id="el">I'm loading</span>
+	</template>
+	<script>
+		Polymer('oo-element', {
+			msg: "ok i'm ready"
+			, ready: function() {
+				this.$.el.innerText = this.msg;
+			}
+		})
+	</script>
+</polymer-element>
