@@ -9,7 +9,7 @@ var mql = window.matchMedia('(max-width: 400px)')
         , _formHandler;
 
     _initShadowDom = function(obj) {
-        var root = host.webkitCreateShadowRoot()
+        var root = host.createShadowRoot()
             markup = template(obj);
 
         root.innerHTML = markup;
